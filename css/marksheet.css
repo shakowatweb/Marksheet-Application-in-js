@@ -1,0 +1,89 @@
+.container{
+	margin:0; padding: 0;
+	background-color: #16A05D;
+	width: 900px;
+	height: 815px;
+	margin:0 auto;
+}
+
+.head{
+	text-align: center;
+	color: #982672;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 40px;
+	
+}
+.head2{
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: -50px;
+	
+}
+.head3{
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: -20px;
+	
+}
+.about_student ul{
+	margin-top: 30px;
+	text-decoration: none;
+	list-style: none;
+}
+.about_student ul li{
+	color:#fff;
+}
+
+.grade{
+	margin-top: -246px;
+	margin-left: 650px;
+	
+	
+}
+.grade table{
+	color: #fff;
+	border-collapse: 5px;
+	
+}
+
+.grade table, tr ,td{
+	
+	text-align: center;
+	border: 1px solid black;
+
+}
+.grade table, tr ,th{
+	
+	text-align: center;
+	border: 1px solid black;
+}
+
+.marks_distribution{
+	
+	margin-top: 50px;
+	margin-left: 40px;
+}
+
+.marks_distribution table{
+	border: 1px solid black;
+	width: 824px;
+	color:#7FE22A;
+}
+.marks_distribution table, tr,td,input{
+	border-radius: 3px;
+	padding: 2px;
+}
+
+.f_div button{
+	margin:0 auto;
+}
+
+.btn{
+	margin-top:15px;
+	margin-left: 300px; 
+}

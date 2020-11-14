@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marksheet</title>
+	<link rel="stylesheet" type="text/css" href="css/marksheet.css">
+</head>
+<body>
+	<div class="container">
+		<p class="head">Bangladesh General Education Board, Dinajpur</p>
+		<p class="head2">ACADEMIC TRANSCRIPT</p>
+		<p class="head3">SECONDARY SCHOOL CERTIFICATE ( SCIENCE) EXAMINATION, 2018</p>
+		<div class="about_student">
+			<ul>
+				<li><select style="padding: 7px; border-radius: 5px; width: 180px">commerce
+					<option>Select Your Group</option>
+					<option  >Science</option>
+					<option>Commerce</option>
+					<option>Arts</option>
+				</select><input style="padding: 4px; border-radius: 5px; width: 202px;" type="date" name=""></li>
+				<li>Name : <input style="width: 235px; padding: 5px; border-radius: 5px;  margin-left: 95px;" type="" name=""></li>
+				<li>Father's Name : <input style="width: 235px; padding: 5px; border-radius: 5px; margin-left: 40px;" type="" name=""></li>
+				<li>Mother's Name : <input style="width: 235px; padding: 5px; border-radius: 5px; margin-left: 35px;" type="" name=""></li>
+				<li>Roll Number : <input style="width: 235px; padding: 5px; border-radius: 5px; margin-left: 50px;" type="" name=""></li>
+				<li>Registration Number : <input style="width: 235px; padding: 5px; border-radius: 5px;" type="" name=""></li>
+				<li>Year/Session : <input style="width: 235px; padding: 5px; border-radius: 5px;margin-left: 53px;" type="" name=""></li>
+				<li>School Name : <input style="width: 235px; padding: 5px; border-radius: 5px;margin-left: 50px;" type="" name=""></li>
+			</ul>
+		</div>
+		<div class="grade">
+			<table>
+				<tr>
+					<th>Range of Marks</th>
+					<th>Grade</th>
+					<th>Point</th>
+				</tr>
+				<tr>
+					<td>80 and above</td>
+					<td>A+</td>
+					<td>5.0</td>
+				</tr>
+				<tr>
+					<td>70 to 79</td>
+					<td>A</td>
+					<td>4.0</td>
+				</tr>
+				<tr>
+					<td>60 to 69</td>
+					<td>A-</td>
+					<td>3.50</td>
+				</tr>
+				<tr>
+					<td>50 to 59</td>
+					<td>B</td>
+					<td>3.0</td>
+				</tr>
+				<tr>
+					<td>40 to 49</td>
+					<td>C</td>
+					<td>2.0</td>
+				</tr>
+				<tr>
+					<td>33 to 49</td>
+					<td>D</td>
+					<td>1.0</td>
+				</tr>
+				<tr>
+					<td>0 to 32</td>
+					<td>F</td>
+					<td>0.0</td>
+				</tr>
+			</table>
+		</div>
+		<div class="marks_distribution">
+			<table>
+				<tr>
+					<th>Subject</th>
+					<th>Marks</th>
+					<th>Latter Grade</th>
+					<th>Grade Poit</th>
+				</tr>
+				<tr>
+					<td id="bangla">Bangla</td>
+					<td><input type="text" id="ban" name="" onkeyup="Shakowat(this.value, 'lg_bangla', 'gpa_bangla')"></td>
+					<td id="lg_bangla">Latter Grade</td>
+					<td id="gpa_bangla">Grade Point</td>
+				</tr>
+				<tr>
+					<td id=english>English</td>
+					<td><input type="text" id="ean" name="" onkeyup="Shakowat(this.value,'lg_english','gpa_english')"></td>
+					<td id="lg_english">Latter Grade</td>
+					<td id="gpa_english">Grade Point</td>
+				</tr>
+				<tr>
+					<td id="math">Math</td>
+					<td><input type="text" id="mat" name="" onkeyup="Shakowat(this.value, 'lg_math','gpa_math')"></td>
+					<td id="lg_math">Latter Grade</td>
+					<td id="gpa_math">Grade Point</td>
+				</tr>
+				<tr>
+					<td id="physices">Physices</td>
+					<td><input type="text" id="phy" onkeyup="Shakowat(this.value, 'lg_physices','gpa_physices')"></td>
+					<td id="lg_physices">Latter Grade</td>
+					<td id="gpa_physices">Grade Point</td>
+				</tr>
+				<tr>
+					<td id="chemistry">Chemistry</td>
+					<td><input type="text" id="che" name="" onkeyup="Shakowat(this.value, 'lg_chemistry','gpa_chemistry')"></td>
+					<td id="lg_chemistry">Latter Grade</td>
+					<td id="gpa_chemistry">Grade Point</td>
+				</tr>
+				<tr>
+					<td id="biology">Biology</td>
+					<td><input type="text" id="bio" name="" onkeyup="Shakowat(this.value, 'lg_biology','gpa_biology')"></td>
+					<td id="lg_biology">Latter Grade</td>
+					<td id="gpa_biology">Grade Point</td>
+				</tr>
+				<tr>
+					<td id="religion">Religion</td>
+					<td><input type="text" id="rel" name="" onkeyup="Shakowat(this.value, 'lg_religion','gpa_religion')"></td>
+					<td id="lg_religion">Latter Grade</td>
+					<td id="gpa_religion">Grade Point</td>
+				</tr>
+				<tr>
+					<td id="computer">Computer</td>
+					<td><input type="text" id="com" name="" onkeyup="Shakowat(this.value, 'lg_computer','gpa_computer')"></td>
+					<td id="lg_computer">Latter Grade</td>
+					<td id="gpa_computer">Grade Point</td>
+				</tr>
+				<tr>
+					<th>Average GPA  </th>
+					<th>Total Marks : <span id="total_m">  </span></th>
+					<th>Latter Grade : <span id="AVG_GP">  </span></th>
+					<th>Grade Point : <span id="total_GPA">  </span></th>
+				</tr>
+			</table>
+
+			<div class="f_div">
+			<button onclick="total()" style="margin-left: 350px; margin-top: 15px; padding: 5px; border-radius: 5px; cursor: pointer;">All Results</button>
+			<button  style="  padding: 5px; border-radius: 5px; cursor: pointer;">Next</button>
+			<button style="  padding: 5px; border-radius: 5px; cursor: pointer;">Preview</button>
+		</div>
+		</div>
+		
+
+
+	</div>
+
+</body>
+<script type="text/javascript" src="js/marksheet.js"></script>
+</html>
